@@ -19,9 +19,12 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; }
+body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; background: #f0f0f0; }
 
-.l { *zoom: 1; }
-.l:after { content: " "; display: table; clear: both; }
-.l .l-col1 { float: left; width: 20%; }
-.l .l-col2 { float: right; width: 70%; }
+.sidebar__header { height: 145px; position: relative; }
+
+.sidebar { position: fixed; top: 0; bottom: 0; left: 0; width: 208px; background: #312430; }
+@media screen and (max-width: 1150px) { .sidebar { width: 50px; overflow: hidden; } }
+
+.wrapper { padding-left: 208px; background: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); min-height: 100%; width: 942px; }
+@media screen and (max-width: 1150px) { .wrapper { padding-left: 20px; } }

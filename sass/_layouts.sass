@@ -1,9 +1,22 @@
 // default layout
-.l
-	+clr
-	.l-col1
-		float: left
-		width: 20%
-	.l-col2
-		float: right
-		width: 70%
+$s: 208px
+$m: 942px
+$w: $s + $m
+.sidebar
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	width: $s    
+	background: #312430
+	+max-screen($w)
+		width: 50px 
+		overflow: hidden
+.wrapper
+	padding-left: $s
+	background: #FFFFFF 
+	box-shadow: 0 0 10px rgba(#000, .2)
+	min-height: 100% 
+	width: $m 
+	+max-screen($w)
+		padding-left: 20px 
