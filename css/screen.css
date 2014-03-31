@@ -19,6 +19,12 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
+@font-face { font-family: Houschka Pro Medium; src: url("../fonts/houschkapro-medium-webfont.eot"); src: url("../fonts/houschkapro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/houschkapro-medium-webfont.woff") format("woff"), url("../fonts/houschkapro-medium-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: HouschkaProBold; src: url("../fonts/houschkapro-bold.eot"); src: url("../fonts/houschkapro-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/houschkapro-bold.woff") format("woff"), url("../fonts/houschkapro-bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: HouschkaProDemiBold; src: url("../fonts/houschkapro-demibold.eot"); src: url("../fonts/houschkapro-demibold.eot?#iefix") format("embedded-opentype"), url("../fonts/houschkapro-demibold.woff") format("woff"), url("../fonts/houschkapro-demibold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
 body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; background: #f0f0f0; color: #242424; font-size: 14px; }
 
 .sidebar__header { height: 145px; position: relative; }
@@ -29,3 +35,81 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; backgr
 .wrapper { padding-left: 208px; background: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); min-height: 100%; width: 942px; }
 @media screen and (max-width: 1150px) { .wrapper { padding-left: 20px; } }
 .wrapper .site { margin: 0 auto; width: 820px; }
+
+body { font-size: 14px; font-family: "Houschka Pro Medium", arial, sans-serif; line-height: 1.4; color: #242424; }
+
+.breadcrumbs { float: left; }
+.breadcrumbs li { position: relative; float: left; margin-left: 38px; }
+.breadcrumbs li:before { content: ""; position: absolute; top: 6px; left: -28px; background: url('../img/icons-s837194829e.png') 0 -177px no-repeat; width: 19px; height: 6px; }
+.breadcrumbs li:first-child { margin-left: 0; }
+.breadcrumbs li:first-child:before { display: none; }
+.breadcrumbs li a { color: #919192; }
+.breadcrumbs li.is-current a { text-decoration: none; cursor: default; }
+
+.share { float: right; }
+.share > span, .share ul { display: inline-block; vertical-align: middle; font-size: 12px; color: #242424; }
+.share > span li, .share ul li { display: inline-block; vertical-align: middle; }
+.share > span li a, .share ul li a { position: relative; display: block; width: 26px; height: 26px; line-height: 26px; text-align: center; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; background: #efefef; }
+.share > span li a i, .share ul li a i { vertical-align: middle; }
+.share > span li a.vk i, .share ul li a.vk i { display: inline-block; background: url('../img/icons-s837194829e.png') 0 -116px no-repeat; width: 9px; height: 12px; }
+.share > span li a.od i, .share ul li a.od i { display: inline-block; background: url('../img/icons-s837194829e.png') 0 -23px no-repeat; width: 10px; height: 16px; }
+.share > span li a.fb i, .share ul li a.fb i { display: inline-block; background: url('../img/icons-s837194829e.png') 0 -153px no-repeat; width: 8px; height: 14px; }
+.share > span li a.tw i, .share ul li a.tw i { display: inline-block; background: url('../img/icons-s837194829e.png') 0 -49px no-repeat; width: 15px; height: 13px; }
+.share > span li a.gp i, .share ul li a.gp i { display: inline-block; background: url('../img/icons-s837194829e.png') 0 0 no-repeat; width: 14px; height: 13px; }
+
+.content__tools { *zoom: 1; }
+.content__tools:after { content: " "; display: table; clear: both; }
+
+.markerror { position: relative; float: left; padding-top: 5px; padding-left: 25px; font-size: 12px; }
+.markerror:before { content: ""; position: absolute; top: 0px; left: 0px; background: url('../img/icons-s837194829e.png') 0 -91px no-repeat; width: 15px; height: 15px; }
+
+.main { margin-top: 15px; margin-bottom: 18px; padding: 60px 0 80px; border-top: 4px solid #313234; border-bottom: 4px solid #313234; }
+
+.h2 { margin-bottom: 20px; font-family: "HouschkaProBold", arial, sans-serif; text-transform: uppercase; line-height: 1; font-size: 40px; color: #352534; }
+
+.request { margin-top: 35px; }
+.request .h3 { margin-bottom: 20px; }
+
+.h3 { font-size: 23px; font-style: normal; }
+
+.request-form { position: relative; *zoom: 1; margin-bottom: 25px; }
+.request-form:after { content: " "; display: table; clear: both; }
+
+.request-form__popup { position: absolute; top: 67px; left: 50%; width: 304px; margin-left: -187px; padding: 20px 35px; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; text-align: center; color: white; font-size: 18px; font-family: "HouschkaProBold", arial, sans-serif; background: #ff2241; }
+
+.request-form__close { position: absolute; top: 11px; right: 11px; background: url('../img/icons-s837194829e.png') 0 -72px no-repeat; width: 10px; height: 9px; cursor: pointer; }
+
+.request-form__left { float: left; }
+
+.request__right { float: right; }
+
+.input { display: block; width: 310px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; margin-bottom: 15px; padding: 0 13px; font-family: "HouschkaProDemiBold", arial, sans-serif; font-size: 17px; color: white; background: #522838; border: none; height: 43px; -webkit-transition: box-shadow 200ms linear; -moz-transition: box-shadow 200ms linear; -o-transition: box-shadow 200ms linear; transition: box-shadow 200ms linear; }
+.input:-moz-placeholder, .input::-moz-placeholder { color: white; opacity: 1; }
+.input::-webkit-input-placeholder { color: white; }
+.input:focus { -webkit-box-shadow: 0 0px 8px #661a1a; -moz-box-shadow: 0 0px 8px #661a1a; box-shadow: 0 0px 8px #661a1a; }
+
+.textarea { display: block; width: 425px; max-width: 425px; height: 194px; max-height: 194px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; padding: 13px; border: none; font-family: "HouschkaProDemiBold", arial, sans-serif; font-size: 17px; color: white; background: #522838; -webkit-transition: box-shadow 200ms linear; -moz-transition: box-shadow 200ms linear; -o-transition: box-shadow 200ms linear; transition: box-shadow 200ms linear; }
+.textarea:-moz-placeholder, .textarea::-moz-placeholder { color: white; opacity: 1; }
+.textarea::-webkit-input-placeholder { color: white; }
+.textarea:focus { -webkit-box-shadow: 0 0px 8px #661a1a; -moz-box-shadow: 0 0px 8px #661a1a; box-shadow: 0 0px 8px #661a1a; }
+
+.request__btn { clear: both; text-align: right; }
+
+.btn { display: inline-block; text-transform: uppercase; font-size: 18px; color: #522838; text-decoration: underline; font-family: "HouschkaProBold", arial, sans-serif; background: inherit; }
+.btn:hover { color: #ff2241; }
+
+.partners-info { text-align: center; }
+
+.partners-info__title { position: relative; display: inline-block; text-align: center; margin-bottom: 40px; height: 44px; line-height: 44px; padding: 0 22px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; background: #ff2241; font-family: "HouschkaProBold", arial, sans-serif; font-size: 23px; color: white; }
+.partners-info__title:before { content: ""; position: absolute; bottom: -10px; left: 50%; margin-left: -11px; width: 0px; height: 0px; border-style: solid; border-width: 10px 11px 0 11px; border-color: #ff2241 transparent transparent transparent; }
+
+.h4 { font-size: 20px; font-family: "HouschkaProBold", arial, sans-serif; }
+
+.partners-info__list { text-align: justify; line-height: 0; font-size: 1px; text-justify: newspaper; zoom: 1; text-align-last: justify; }
+.partners-info__list:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
+.partners-info__list li { width: 30%; display: inline-block; line-height: normal; vertical-align: top; font-size: 14px; }
+.partners-info__list li .h4 { margin-bottom: 15px; text-align: left; }
+.partners-info__list li p { margin-bottom: 20px; text-align: left; font-size: 15px; }
+.partners-info__list li p i { font-family: "HouschkaProDemiBold", arial, sans-serif; font-style: normal; }
+.partners-info__list li ul li { width: 100%; position: relative; padding-left: 10px; }
+.partners-info__list li ul li:before { content: "–"; position: absolute; top: 5px; left: -5px; }
