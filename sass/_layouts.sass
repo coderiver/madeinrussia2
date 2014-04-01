@@ -9,11 +9,13 @@ $w: $s + $m
 	left: 0
 	width: $s    
 	background: #312430
+	z-index: 2
 	+max-screen($w)
 		width: 50px 
 		overflow: hidden
 .wrapper
-	padding-left: $s
+	position: relative
+	margin-left: $s
 	background: #FFFFFF 
 	box-shadow: 0 0 10px rgba(#000, .2)
 	min-height: 100% 
@@ -21,5 +23,6 @@ $w: $s + $m
 	+max-screen($w)
 		padding-left: 20px 
 	.site
-		margin: 0 auto 
-		width: 820px 
+		margin: 0 auto
+		width: 820px
+		padding-bottom: 98px 

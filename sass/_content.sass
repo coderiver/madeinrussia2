@@ -1,131 +1,10 @@
 // content pages styles
-
-body
-	font-size: 14px 
-	+hp_m
-	line-height: 1.4
-	color: #242424
 	
-=justify
-	text-align: justify
-	line-height: 0
-	font-size: 1px
-	text-justify: newspaper
-	zoom: 1
-	text-align-last: justify
-	&:after
-		content: ""
-		display: inline-block
-		width: 100%
-		height: 0px
-		visibility: hidden
-		overflow: hidden
-=justify-child
-	display: inline-block
-	line-height: normal
-	vertical-align: top
-	font-size: 14px	
-
-// breadcrumbs
-.breadcrumbs
-	float: left
-	li
-		position: relative
-		float: left
-		margin-left: 38px
-		&:before
-			content: ""
-			position: absolute
-			top: 6px
-			left: -28px
-			+s(crumbs-arr)
-		&:first-child
-			margin-left: 0
-			&:before
-				display: none	
-		a
-			color: #919192
-		&.is-current
-			a
-				text-decoration: none
-				cursor: default
-
-// share
-.share
-	float: right	
-	& > span, ul
-		display: inline-block
-		vertical-align: middle
-		font-size: 12px
-		color: #242424
-		li
-			display: inline-block
-			vertical-align: middle
-			a
-				position: relative
-				display: block
-				width: 26px
-				height: 26px
-				line-height: 26px
-				text-align: center
-				+border-radius(50%)
-				background: #efefef
-				i
-					vertical-align: middle
-				&.vk
-					i
-						display: inline-block
-						+s(vk)
-				&.od
-					i
-						display: inline-block
-						+s(od)
-				&.fb
-					i
-						display: inline-block
-						+s(fb)
-				&.tw
-					i
-						display: inline-block
-						+s(tw)
-				&.gp
-					i
-						display: inline-block
-						+s(gp)								
-.content__tools
-	+clr
-.markerror 
-	position: relative
-	float: left
-	padding-top: 5px
-	padding-left: 25px
-	font-size: 12px 
-	&:before
-		content: ""
-		position: absolute
-		top: 0px
-		left: 0px
-		+s(pencil)
-.main
-	margin-top: 15px
-	margin-bottom: 18px
-	padding: 60px 0 80px 
-	border-top: 4px solid #313234
-	border-bottom: 4px solid #313234
-.h2
-	margin-bottom: 20px
-	+hp_b
-	text-transform: uppercase
-	line-height: 1
-	font-size: 40px
-	color: #352534	
+// zayavka		
 .request
 	margin-top: 35px
 	.h3
-		margin-bottom: 20px  	
-.h3
-	font-size: 23px
-	font-style: normal
+		margin-bottom: 20px
 .request-form
 	position: relative
 	+clr
@@ -148,57 +27,16 @@ body
 	top: 11px
 	right: 11px
 	+s(close)
-	cursor: pointer    	
+	cursor: pointer
+	&:hover
+		+s(close-hover)    	
 .request-form__left
 	float: left	
 .request__right
-	float: right		 	 			 		 
-.input
-	display: block
-	width: 310px
-	+border-radius(4px) 
-	margin-bottom: 15px
-	padding: 0 13px 
-	+hp_db
-	font-size: 17px
-	color: #fff
-	background: #522838
-	border: none
-	height: 43px
-	+placeholder-color(#fff)
-	+transition(box-shadow 200ms linear)
-	&:focus
-		+box-shadow(0 0px 8px #661A1A)		
-.textarea
-	display: block
-	width: 425px
-	max-width: 425px
-	height: 194px
-	max-height: 194px 
-	+border-radius(4px)
-	padding: 13px	
-	border: none
-	+hp_db
-	font-size: 17px
-	color: #fff
-	background: #522838
-	+placeholder-color(#fff)
-	+transition(box-shadow 200ms linear)
-	&:focus
-		+box-shadow(0 0px 8px #661A1A)
+	float: right
 .request__btn
 	clear: both
 	text-align: right
-.btn
-	display: inline-block
-	text-transform: uppercase
-	font-size: 18px
-	color: #522838
-	text-decoration: underline
-	+hp_b
-	background: inherit 
-	&:hover
-		color: #ff2241
 .partners-info
 	text-align: center	
 .partners-info__title
@@ -220,10 +58,7 @@ body
 		bottom: -10px
 		left: 50%
 		margin-left: -11px 
-		+arr(22, 10, #ff2241, b)
-.h4
-	font-size: 20px
-	+hp_b		
+		+arr(22, 10, #ff2241, b)	
 .partners-info__list
 	+justify
 	li
@@ -247,6 +82,64 @@ body
 				&:before
 					content: "–"
 					position: absolute
-					top: 5px 
-					left: -5px 			 	
+					top: 0px 
+					left: -5px
+					
+// experts
+.experts
+	font-size: 0
+	margin-left: -35px
+.experts__item
+	position: relative
+	display: inline-block
+	vertical-align: top
+	width: 127px
+	margin-left: 35px
+	font-size: 13px
+	color: #242424
+	line-height: 1.2
+	text-decoration: none
+	&:hover
+		.experts__name
+			text-decoration: none
+			color: #ff2241
+	&.is-disabled
+		cursor: default
+		.experts__img
+			img
+				+opacity(0.5)
+		.soon
+			position: absolute
+			left: 0
+			top: 100px
+			height: 24px
+			line-height: 24px 
+			padding: 0px 8px 
+			+opacity(.9)
+			+border-radius(2px)
+			background: #c52f49
+			+hp_db
+			color: #883543
+			font-size: 17px
+		&:hover
+			.experts__name
+				text-decoration: underline
+				color: #242424	
+.experts__img
+	width: 127px
+	height: 127px
+	margin-bottom: 10px
+	+border-radius(50%)
+	overflow: hidden
+	text-align: center
+.experts__name
+	font-size: 18px
+	+hp_b 
+	color: #242424
+	line-height: 1
+	margin-bottom: 5px
+	text-decoration: underline
+.expert__company
+	padding-top: 10px
+	color: #8a8a8a		
 
