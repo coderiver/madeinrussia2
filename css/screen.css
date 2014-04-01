@@ -59,7 +59,7 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .markerror { position: relative; float: left; padding-top: 5px; padding-left: 25px; font-size: 12px; }
 .markerror:before { content: ""; position: absolute; top: 5px; left: 0px; background: url('../img/icons-s07bedc3b39.png') 0 -222px no-repeat; width: 15px; height: 15px; }
 
-.main { margin-top: 15px; margin-bottom: 18px; padding: 0px 30px 80px; border-top: 4px solid #313234; }
+.main { margin-top: 15px; margin-bottom: 18px; padding: 0px 30px 30px; border-top: 4px solid #313234; }
 
 .h2 { margin-bottom: 20px; font-family: "HouschkaProBold", arial, sans-serif; margin-top: 60px; text-transform: uppercase; line-height: 1; font-size: 40px; color: #352534; }
 
@@ -198,5 +198,14 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .map-popup { position: absolute; top: 180px; left: 50%; margin-left: -216px; width: 432px; padding: 30px 25px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90); opacity: 0.9; -webkit-border-radius: 4px 4px; -moz-border-radius: 4px 4px; -ms-border-radius: 4px 4px; -o-border-radius: 4px 4px; border-radius: 4px 4px; background: #ff2141; -webkit-box-shadow: 2px 4px 3px rgba(0, 0, 1, 0.3); -moz-box-shadow: 2px 4px 3px rgba(0, 0, 1, 0.3); box-shadow: 2px 4px 3px rgba(0, 0, 1, 0.3); font-family: "HouschkaProDemiBold", arial, sans-serif; color: white; font-size: 16px; line-height: 1.2; }
 .map-popup:before { content: ""; position: absolute; top: 100%; left: 37px; width: 0px; height: 0px; border-style: solid; border-width: 13px 13px 0 13px; border-color: #f12643 transparent transparent transparent; }
 .map-popup a { color: white; }
+.map-popup a:hover { color: #fe9eac; text-decoration: none; }
 
 .map-popup__title { font-family: "HouschkaProBold", arial, sans-serif; font-size: 24px; margin-bottom: 5px; }
+
+.catalog { font-size: 0; }
+
+.keyletter { display: inline-block; vertical-align: top; width: 180px; padding-right: 10px; margin-bottom: 60px; font-size: 14px; }
+.keyletter a { color: #242424; }
+.keyletter a:hover { color: #ff2241; text-decoration: none; }
+
+.letter { margin-bottom: 23px; font-family: "HouschkaProBold", arial, sans-serif; font-size: 44px; color: #312530; }
