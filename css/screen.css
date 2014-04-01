@@ -65,7 +65,7 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 
 .h3 { font-size: 26px; color: #352534; margin: 32px 0 36px; text-transform: uppercase; font-family: "HouschkaProBold", arial, sans-serif; }
 
-.h4 { font-size: 20px; font-family: "HouschkaProBold", arial, sans-serif; }
+.h4 { font-size: 23px; font-family: "HouschkaProDemiBold", arial, sans-serif; }
 
 .footer { position: absolute; bottom: 0; left: 0; right: 0; *zoom: 1; }
 .footer:after { content: " "; display: table; clear: both; }
@@ -73,13 +73,13 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .footer__inner { width: 820px; margin: 0 auto; height: 76px; padding-top: 18px; border-top: 4px solid #313234; }
 
 .input { display: block; width: 310px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; margin-bottom: 15px; padding: 0 13px; font-family: "HouschkaProDemiBold", arial, sans-serif; font-size: 17px; color: white; background: #522838; border: none; height: 43px; -webkit-transition: box-shadow 200ms linear; -moz-transition: box-shadow 200ms linear; -o-transition: box-shadow 200ms linear; transition: box-shadow 200ms linear; }
-.input:-moz-placeholder, .input::-moz-placeholder { color: white; opacity: 1; }
-.input::-webkit-input-placeholder { color: white; }
+.input:-moz-placeholder, .input::-moz-placeholder { color: #e3e0e1; opacity: 1; }
+.input::-webkit-input-placeholder { color: #e3e0e1; }
 .input:focus { -webkit-box-shadow: 0 0px 8px #661a1a; -moz-box-shadow: 0 0px 8px #661a1a; box-shadow: 0 0px 8px #661a1a; }
 
-.textarea { display: block; width: 376px; max-width: 376px; height: 194px; max-height: 194px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; padding: 13px; border: none; font-family: "HouschkaProDemiBold", arial, sans-serif; font-size: 17px; color: white; background: #522838; -webkit-transition: box-shadow 200ms linear; -moz-transition: box-shadow 200ms linear; -o-transition: box-shadow 200ms linear; transition: box-shadow 200ms linear; }
-.textarea:-moz-placeholder, .textarea::-moz-placeholder { color: white; opacity: 1; }
-.textarea::-webkit-input-placeholder { color: white; }
+.textarea { display: block; width: 376px; height: 194px; resize: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; padding: 13px; border: none; font-family: "HouschkaProDemiBold", arial, sans-serif; font-size: 17px; color: white; background: #522838; -webkit-transition: box-shadow 200ms linear; -moz-transition: box-shadow 200ms linear; -o-transition: box-shadow 200ms linear; transition: box-shadow 200ms linear; }
+.textarea:-moz-placeholder, .textarea::-moz-placeholder { color: #e3e0e1; opacity: 1; }
+.textarea::-webkit-input-placeholder { color: #e3e0e1; }
 .textarea:focus { -webkit-box-shadow: 0 0px 8px #661a1a; -moz-box-shadow: 0 0px 8px #661a1a; box-shadow: 0 0px 8px #661a1a; }
 
 .btn { display: inline-block; text-transform: uppercase; font-size: 18px; color: #522838; text-decoration: underline; font-family: "HouschkaProBold", arial, sans-serif; background: inherit; }
@@ -185,3 +185,18 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .expert__company { float: left; width: 50%; text-align: right; padding-top: 40px; }
 
 .expert__about p { margin-bottom: 20px; }
+
+.contacts { margin: 31px -91px 0; background: whitesmoke; }
+.contacts .request { width: 760px; margin: 0 auto; padding: 0 30px; }
+.contacts .request .h4 { margin-bottom: 10px; padding-left: 10px; }
+.contacts .request .textarea { height: 74px; max-height: 74px; }
+
+.contacts__form { padding-bottom: 35px; }
+
+.map { position: relative; height: 593px; margin: 0 0 50px; }
+
+.map-popup { position: absolute; top: 180px; left: 50%; margin-left: -216px; width: 432px; padding: 30px 25px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90); opacity: 0.9; -webkit-border-radius: 4px 4px; -moz-border-radius: 4px 4px; -ms-border-radius: 4px 4px; -o-border-radius: 4px 4px; border-radius: 4px 4px; background: #ff2141; -webkit-box-shadow: 2px 4px 3px rgba(0, 0, 1, 0.3); -moz-box-shadow: 2px 4px 3px rgba(0, 0, 1, 0.3); box-shadow: 2px 4px 3px rgba(0, 0, 1, 0.3); font-family: "HouschkaProDemiBold", arial, sans-serif; color: white; font-size: 16px; line-height: 1.2; }
+.map-popup:before { content: ""; position: absolute; top: 100%; left: 37px; width: 0px; height: 0px; border-style: solid; border-width: 13px 13px 0 13px; border-color: #f12643 transparent transparent transparent; }
+.map-popup a { color: white; }
+
+.map-popup__title { font-family: "HouschkaProBold", arial, sans-serif; font-size: 24px; margin-bottom: 5px; }
