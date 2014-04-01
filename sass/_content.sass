@@ -141,5 +141,59 @@
 	text-decoration: underline
 .expert__company
 	padding-top: 10px
-	color: #8a8a8a		
+	color: #8a8a8a
+	
+// experts_one
+.expert
+	+clr
+	padding-top: 48px
+.expert__left
+	float: left
+	width: 170px
+	margin-left: -15px
+.expert__img
+	width: 142px
+	height: 142px
+	+border-radius(50%)
+	overflow: hidden
+	text-align: center
+	img
+		min-width: 100%
+.expert__right
+	overflow: hidden
+.expert__topper 
+	+clr
+	margin-bottom: 45px
+.expert__info 
+	float: left
+	width: 50%
+	font-size: 13px
+.expert__name
+	font-size: 25px
+	color: #141415
+	+hp_b
+.expert__birthday
+	position: relative
+	color: #c0c0c0
+	font-size: 12px
+	padding-left: 19px
+	margin: 12px 0 
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		+s(gift)
+.expert__company
+	float: left
+	width: 50%
+	text-align: right
+	padding-top: 40px
+.expert__about
+	p
+		margin-bottom: 20px	
+
+	
+  	
+	 
 

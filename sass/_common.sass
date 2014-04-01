@@ -318,4 +318,31 @@ body
 			+text-overflow
 			&:hover
 				color: #fff
-				background: #ff2241 
+				background: #ff2241
+
+//feedback
+.feedback
+	position: relative
+	display: inline-block
+	height: 40px
+	line-height: 40px
+	padding: 0 20px 0 52px
+	+border-radius(4px)
+	background: #f2f2f2
+	color: #242424
+	font-size: 14px
+	text-decoration: none
+	&:before
+		content: ""
+		position: absolute
+		top: 7px 
+		left: 17px
+		+s(expert)
+	span
+		line-height: 1
+		border-bottom: 1px dashed
+	&:hover
+		color: #c6304a
+		span
+			border-bottom: none	 	 
+	 
