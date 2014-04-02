@@ -264,6 +264,54 @@
 	+hp_b
 	font-size: 44px
 	color: #312530
+	
+// brands
+.brands
+	font-size: 0
+.brands__item
+	display: inline-block
+	vertical-align: top
+	width: 170px
+	margin-bottom: 40px
+	padding-right: 20px
+	font-size: 14px
+	text-decoration: none 
+	color: #242424
+	&:hover
+		.brands__name
+			text-decoration: none
+			color: #ff2241
+	&.is-inprogress
+		.brands__logo
+			.soon
+				position: absolute
+				left: 0px
+				bottom: 10px
+				height: 24px
+				line-height: 24px 
+				padding: 0px 8px 
+				+opacity(.9)
+				+border-radius(2px)
+				background: #c52f49
+				+hp_db
+				color: #883543
+				font-size: 17px
+.brands__logo
+	position: relative
+	height: 150px
+	line-height: 140px
+	img
+		display: inline-block
+		vertical-align: middle
+		max-width: 100%
+		max-height: 100%
+.brands__name
+	font-size: 17px
+	text-decoration: underline
+	+hp_db
+	margin-bottom: 10px
+	
+
 
 
 	
