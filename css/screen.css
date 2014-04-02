@@ -27,6 +27,8 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium", arial, sans-serif; line-height: 1.4; color: #242424; }
 
+.column25 { float: left; width: 25%; }
+
 .column33 { float: left; width: 33%; }
 
 .column40 { float: left; width: 40%; }
@@ -277,8 +279,8 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 
 .brand__article { font-size: 15px; }
 .brand__article p { margin-bottom: 25px; line-height: 1.2; }
-.brand__article .title { position: relative; display: inline-block; font-size: 25px; color: #492b47; font-family: "HouschkaProBold", arial, sans-serif; }
-.brand__article .title:before { content: ""; position: absolute; bottom: -2px; left: 0; width: 40%; height: 3px; background: #492b47; }
+.brand__article .title { position: relative; display: inline-block; font-size: 25px; margin-bottom: 20px; text-transform: uppercase; color: #492b47; font-family: "HouschkaProBold", arial, sans-serif; }
+.brand__article .title:before { content: ""; position: absolute; bottom: -2px; left: 0; width: 65px; height: 3px; background: #492b47; }
 
 .grey-box { *zoom: 1; margin: 0 -30px 50px; padding: 60px 50px 50px; background: whitesmoke; }
 .grey-box:after { content: " "; display: table; clear: both; }
@@ -314,3 +316,23 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .vcard__title:before { content: ""; position: absolute; bottom: -10px; right: 16px; width: 0px; height: 0px; border-style: solid; border-width: 10px 11px 0 11px; border-color: #ff2241 transparent transparent transparent; }
 
 .vcard__name { font-size: 15px; font-family: "HouschkaProDemiBold", arial, sans-serif; }
+
+.best__check p { width: 60%; font-size: 14px; font-family: "HouschkaProDemiBold", arial, sans-serif; }
+
+.best__record { position: relative; top: -20px; text-align: right; }
+
+.best__stats p { padding-left: 30px; }
+
+.best__popular > div { position: relative; *zoom: 1; min-height: 55px; padding-top: 160px; }
+.best__popular > div:after { content: " "; display: table; clear: both; }
+.best__popular > div p { float: right; width: 45%; font-size: 14px; font-family: "HouschkaProDemiBold", arial, sans-serif; }
+
+.best__objects { background: url(../img/best6.png) 0 0 no-repeat; }
+
+.best__staff { background: url(../img/best7.png) 0 0 no-repeat; }
+
+.best__clients { background: url(../img/best8.png) 0 0 no-repeat; }
+
+.best__calls { background: url(../img/best9.png) 0 0 no-repeat; }
+
+.best__traffic p { width: 60%; padding-left: 20px; font-size: 14px; font-family: "HouschkaProDemiBold", arial, sans-serif; }

@@ -351,6 +351,8 @@
 		position: relative
 		display: inline-block
 		font-size: 25px
+		margin-bottom: 20px
+		text-transform: uppercase
 		color: #492b47
 		+hp_b
 		&:before
@@ -358,7 +360,7 @@
 			position: absolute
 			bottom: -2px
 			left: 0
-			width: 40%
+			width: 65px
 			height: 3px
 			background: #492b47   			
 .grey-box
@@ -459,7 +461,49 @@
 		+arr(22, 10, #ff2241, b)  
 .vcard__name
 	font-size: 15px
-	+hp_db 		 
+	+hp_db
+
+// best
+.best__check
+	p
+		width: 60%
+		font-size: 14px
+		+hp_db
+.best__record
+	position: relative
+	top: -20px
+	text-align: right
+.best__stats
+	p
+		padding-left: 30px
+.best__popular
+	& > div
+		position: relative
+		+clr
+		min-height: 55px
+		padding-top: 160px
+		p
+			float: right
+			width: 45%
+			font-size: 14px
+			+hp_db
+.best__objects
+	background: url(../img/best6.png) 0 0 no-repeat 
+.best__staff
+	background: url(../img/best7.png) 0 0 no-repeat
+.best__clients
+	background: url(../img/best8.png) 0 0 no-repeat
+.best__calls 
+	background: url(../img/best9.png) 0 0 no-repeat
+.best__traffic
+	p
+		width: 60% 
+		padding-left: 20px
+		font-size: 14px
+		+hp_db 
+	
+	
+
 
 
 				 
