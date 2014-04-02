@@ -66,6 +66,20 @@ body
 	line-height: normal
 	vertical-align: top
 	font-size: 14px	
+.column33
+	float: left
+	width: 33%
+.column40
+	float: left
+	width: 40%
+.column50
+	float: left
+	width: 50%
+.column60
+	float: left
+	width: 60%	
+.clr
+	+clr
 
 // breadcrumbs
 .breadcrumbs
@@ -172,14 +186,19 @@ body
 	margin-bottom: 18px
 	padding: 0px 30px 30px 
 	border-top: 4px solid #313234
-.h2
+
+.h1, .h2
 	margin-bottom: 20px
 	+hp_b
-	margin-top: 60px
 	text-transform: uppercase
 	line-height: 1
-	font-size: 40px
 	color: #352534
+.h1
+	font-size: 54px
+	margin-top: 40px
+.h2
+	margin-top: 60px
+	font-size: 40px 		
 .h3
 	font-size: 26px
 	color: #352534
@@ -349,6 +368,10 @@ body
 		color: #c6304a
 		span
 			border-bottom: none
+.feedback_letter
+	&:before
+		top: 14px
+		+s(letter)			
 			
 // loading
 +keyframes(round)
