@@ -411,14 +411,20 @@ body
 			
 // language switch
 .lang
+	position: fixed
+	left: 208px
 	width: 820px
-	margin: 0 auto  
+	margin: 0 auto
+	padding: 0 61px   
 	height: 86px
+	background: #fff 
 	+clr
+	z-index: 999
 .lang__inner	
 	position: relative
 	float: right
-	width: 85px 
+	width: 85px
+	min-height: 28px 
 .lang__list
 	position: absolute
 	top: 0
@@ -450,6 +456,22 @@ body
 					color: #e08393
 	&:hover
 		background: #d16679
+.scroll-up
+	float: right
+	width: 53px
+	height: 28px
+	margin-left: 2px
+	line-height: 28px
+	text-align: center
+	font-size: 12px
+	+hp_b
+	color: #fff
+	text-transform: uppercase
+	+border-radius(0 0 2px 2px)
+	background: #54293a
+	cursor: pointer
+	&:hover
+		background: #715d65      		
 		 						
 
 

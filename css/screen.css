@@ -151,10 +151,10 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .loading span { position: relative; }
 .loading span .refresh { position: absolute; top: 0; left: -30px; background: url('../img/icons-s94422c8a13.png') 0 -309px no-repeat; width: 17px; height: 19px; -webkit-animation: round 0.5s linear infinite; -moz-animation: round 0.5s linear infinite; -ms-animation: round 0.5s linear infinite; -o-animation: round 0.5s linear infinite; animation: round 0.5s linear infinite; }
 
-.lang { width: 820px; margin: 0 auto; height: 86px; *zoom: 1; }
+.lang { position: fixed; left: 208px; width: 820px; margin: 0 auto; padding: 0 61px; height: 86px; background: white; *zoom: 1; z-index: 999; }
 .lang:after { content: " "; display: table; clear: both; }
 
-.lang__inner { position: relative; float: right; width: 85px; }
+.lang__inner { position: relative; float: right; width: 85px; min-height: 28px; }
 
 .lang__list { position: absolute; top: 0; left: 0; right: 0; width: 85px; height: 20px; padding: 4px 0; overflow: hidden; background: #c6304a; -webkit-transition: height 0.2s linear; -moz-transition: height 0.2s linear; -o-transition: height 0.2s linear; transition: height 0.2s linear; -webkit-border-radius: 0 0 2px 2px; -moz-border-radius: 0 0 2px 2px; -ms-border-radius: 0 0 2px 2px; -o-border-radius: 0 0 2px 2px; border-radius: 0 0 2px 2px; }
 .lang__list li { padding: 3px 0; }
@@ -163,6 +163,9 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .lang__list.is-open:hover { background: #c6304a; }
 .lang__list.is-open:hover a:hover { color: #e08393; }
 .lang__list:hover { background: #d16679; }
+
+.scroll-up { float: right; width: 53px; height: 28px; margin-left: 2px; line-height: 28px; text-align: center; font-size: 12px; font-family: "HouschkaProBold", arial, sans-serif; color: white; text-transform: uppercase; -webkit-border-radius: 0 0 2px 2px; -moz-border-radius: 0 0 2px 2px; -ms-border-radius: 0 0 2px 2px; -o-border-radius: 0 0 2px 2px; border-radius: 0 0 2px 2px; background: #54293a; cursor: pointer; }
+.scroll-up:hover { background: #715d65; }
 
 .sidebar__overlay { display: none; }
 .is-narrow.is-sidebar .sidebar__overlay { display: block; position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: 2; }
@@ -240,7 +243,7 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .wrapper { position: relative; margin-left: 208px; background: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); min-height: 100%; width: 942px; }
 .is-narrow .wrapper { margin-left: 20px; }
 .is-sidebar.is-narrow .wrapper { margin-left: 20px; }
-.wrapper .site { margin: 0 auto; width: 820px; padding-bottom: 98px; }
+.wrapper .site { margin: 0 auto; width: 820px; padding-top: 86px; padding-bottom: 98px; }
 
 .request .h3 { margin-bottom: 20px; }
 .request .h4 { margin-bottom: 24px; }

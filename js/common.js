@@ -91,7 +91,15 @@ $(document).ready(function() {
         event.stopPropagation(); 
     });
     
+    // body scroll-top  
+    
+    $(".js-scrolltop").click(function (){
+        $('html, body').animate({
+            scrollTop: $(".wrapper").offset().top
+        }, 500);
+    })
 
+    
 
     $(document).click(function(event){
       $(".js-select-list").slideUp('fast');
