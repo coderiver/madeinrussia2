@@ -19,6 +19,8 @@
 	list-style: none
 	font-size: 14px 
 	margin-left: 60px 
+	.is-narrow &
+		margin-left: 14px 
 	li
 		margin-bottom: 17px 
 	a
@@ -28,7 +30,23 @@
 		position: relative
 		span
 			.is-narrow &
+				position: absolute
+				
+				font-size: 14px  
+				color: #2D212C
+				height: 32px  
+				line-height: 32px
+				left: 28px  
+				top: -6px 
 				display: none
+				+s(nav)
+				width: auto 
+				padding: 0 11px 0 22px 
+				white-space: nowrap
+		&:hover
+			span
+				.is-narrow &
+					display: block
 		&:hover
 			color: #C4324C
 			text-decoration: underline 
@@ -39,12 +57,14 @@
 			top: -2px 
 			.is-narrow &
 				position: static
+				display: inline-block
 	@each $s in 1,2,3,4,5,6,7
 		.sidebar__nav#{$s} 
 			i
 				+s(ico#{$s})
 			&:hover i
-				+sp(ico#{$s}h)
+				.is-narrow &
+					+sp(ico#{$s}h)
 
 
 .sidebar__bottom
