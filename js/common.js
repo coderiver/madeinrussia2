@@ -9,6 +9,16 @@ $(document).ready(function() {
         }
     });
 
+    $('.sidebar__logo a').click(function(event) {
+        if(b.hasClass('is-narrow')){
+            b.addClass('is-sidebar');
+            return false;
+        }
+    });
+    $('.sidebar__overlay').click(function(event) {
+        b.removeClass('is-sidebar');
+    });
+
 	// select
     function select() {
         $(".js-select").each(function(){

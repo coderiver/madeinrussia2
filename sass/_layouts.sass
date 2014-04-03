@@ -12,6 +12,8 @@ $w: $s + $m
 	z-index: 2
 	.is-narrow &
 		width: 50px 
+	.is-sidebar.is-narrow &
+		width: $s 
 .wrapper
 	position: relative
 	margin-left: $s
@@ -20,8 +22,9 @@ $w: $s + $m
 	min-height: 100% 
 	width: $m 
 	.is-narrow &
-		padding-left: 20px 
-		margin-left: 0 
+		margin-left: 20px
+	.is-sidebar.is-narrow &
+		margin-left: 20px 
 	.site
 		margin: 0 auto
 		width: 820px
