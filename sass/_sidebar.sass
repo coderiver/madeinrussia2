@@ -10,10 +10,10 @@
 			text-decoration: none
 			display: inline-block
 			+s(logo)
-			+max-screen(1150)
+			.is-narrow &
 				+s(back)
 			&:hover
-				+max-screen(1150)
+				.is-narrow &
 					+sp(backh)
 .sidebar__nav
 	list-style: none
@@ -27,7 +27,7 @@
 		display: block
 		position: relative
 		span
-			+max-screen(1150)
+			.is-narrow &
 				display: none
 		&:hover
 			color: #C4324C
@@ -37,7 +37,7 @@
 			position: absolute
 			left: -30px 
 			top: -2px 
-			+max-screen(1150)
+			.is-narrow &
 				position: static
 	@each $s in 1,2,3,4,5,6,7
 		.sidebar__nav#{$s} 
@@ -54,10 +54,10 @@
 	font-size: 11px 
 	color: #A1A4AD 
 	line-height: 1.1 
-	+max-screen(1150)
+	.is-narrow &
 		left: 16px 
 	.sidebar__text
-		+max-screen(1150)
+		.is-narrow &
 			display: none
 	.sidebar__age
 		display: inline-block
@@ -70,7 +70,7 @@
 		width: 39px  
 		text-align: center
 		margin-bottom: 8px
-		+max-screen(1150)
+		.is-narrow &
 			display: none 
 	a
 		color: #FC2747
@@ -84,7 +84,7 @@
 		display: inline-block
 		vertical-align: middle
 		margin-right: 13px 
-		+max-screen(1150)
+		.is-narrow &
 			display: block
 			margin-bottom: 13px 
 			margin: 0 auto 13px auto 

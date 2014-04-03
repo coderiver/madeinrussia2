@@ -10,7 +10,7 @@ $w: $s + $m
 	width: $s    
 	background: #312430
 	z-index: 2
-	+max-screen($w)
+	.is-narrow &
 		width: 50px 
 		overflow: hidden
 .wrapper
@@ -20,8 +20,9 @@ $w: $s + $m
 	box-shadow: 0 0 10px rgba(#000, .2)
 	min-height: 100% 
 	width: $m 
-	+max-screen($w)
+	.is-narrow &
 		padding-left: 20px 
+		margin-left: 0 
 	.site
 		margin: 0 auto
 		width: 820px

@@ -1,4 +1,13 @@
 $(document).ready(function() {
+    b = $('body');
+    $(window).resize(function(event) {
+        if($(window).width()<1150){
+            b.addClass('is-narrow')
+        }
+        else{
+            b.removeClass('is-narrow')
+        }
+    });
 
 	// select
     function select() {
