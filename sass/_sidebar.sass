@@ -1,0 +1,96 @@
+.sidebar__top
+	height: 145px 
+	position: relative
+	text-align: center
+	padding-top: 36px 
+	.sidebar__logo
+		display: inline-block
+		a
+			+hide-text
+			text-decoration: none
+			display: inline-block
+			+s(logo)
+			+max-screen(1150)
+				+s(back)
+			&:hover
+				+max-screen(1150)
+					+sp(backh)
+.sidebar__nav
+	list-style: none
+	font-size: 14px 
+	margin-left: 60px 
+	li
+		margin-bottom: 17px 
+	a
+		color: #EBEBEB 
+		text-decoration: none
+		display: block
+		position: relative
+		span
+			+max-screen(1150)
+				display: none
+		&:hover
+			color: #C4324C
+			text-decoration: underline 
+		i
+			display: inline-block
+			position: absolute
+			left: -30px 
+			top: -2px 
+			+max-screen(1150)
+				position: static
+	@each $s in 1,2,3,4,5,6,7
+		.sidebar__nav#{$s} 
+			i
+				+s(ico#{$s})
+			&:hover i
+				+sp(ico#{$s}h)
+
+
+.sidebar__bottom
+	position: absolute
+	bottom: 33px 
+	left: 30px 
+	font-size: 11px 
+	color: #A1A4AD 
+	line-height: 1.1 
+	+max-screen(1150)
+		left: 16px 
+	.sidebar__text
+		+max-screen(1150)
+			display: none
+	.sidebar__age
+		display: inline-block
+		border-radius: 3px 
+		border: 1px solid #655961 
+		font-size: 18px 
+		color: #A1A4AD
+		height: 26px  
+		line-height: 26px
+		width: 39px  
+		text-align: center
+		margin-bottom: 8px
+		+max-screen(1150)
+			display: none 
+	a
+		color: #FC2747
+		text-decoration: underline 
+		&:hover
+			color: #7F7E87
+			text-decoration: none 
+.ssocials
+	margin-top: 15px 
+	a
+		display: inline-block
+		vertical-align: middle
+		margin-right: 13px 
+		+max-screen(1150)
+			display: block
+			margin-bottom: 13px 
+			margin: 0 auto 13px auto 
+	@each $s in vk,fb,tw
+		.ssocials__#{$s}
+			+s(s#{$s})
+			&:hover
+				+sp(s#{$s}h)
+
