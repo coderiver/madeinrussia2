@@ -1,12 +1,16 @@
 $(document).ready(function() {
     b = $('body');
-    $(window).resize(function(event) {
+    function doclass(){
         if($(window).width()<1150){
             b.addClass('is-narrow')
         }
         else{
             b.removeClass('is-narrow')
         }
+    }
+    doclass();
+    $(window).resize(function(event) {
+        doclass();
     });
 
     $('.sidebar__logo a').click(function(event) {
