@@ -69,9 +69,19 @@ $(document).ready(function() {
         });
     } 
     tab();
+
+    // lang
+
+    $(".js-lang").on('click', function(event){
+        $(this).toggleClass('is-open');
+        event.stopPropagation(); 
+    });
     
+
+
     $(document).click(function(event){
       $(".js-select-list").slideUp('fast');
+      $(".js-lang").removeClass('is-open');
 	});
 
 
