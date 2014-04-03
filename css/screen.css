@@ -152,7 +152,7 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .loading span { position: relative; }
 .loading span .refresh { position: absolute; top: 0; left: -30px; background: url('../img/icons-s94422c8a13.png') 0 -309px no-repeat; width: 17px; height: 19px; -webkit-animation: round 0.5s linear infinite; -moz-animation: round 0.5s linear infinite; -ms-animation: round 0.5s linear infinite; -o-animation: round 0.5s linear infinite; animation: round 0.5s linear infinite; }
 
-.lang { position: fixed; left: 208px; width: 820px; margin: 0 auto 36px; padding: 0 61px; height: 50px; background: white; *zoom: 1; z-index: 999; }
+.lang { position: fixed; left: 208px; width: 820px; margin: 0 auto 36px; padding: 0 61px; height: 50px; background: rgba(255, 255, 255, 0.9); *zoom: 1; z-index: 999; }
 .lang:after { content: " "; display: table; clear: both; }
 
 .lang__inner { position: relative; float: right; width: 85px; min-height: 28px; }
