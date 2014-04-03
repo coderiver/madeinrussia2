@@ -404,6 +404,50 @@ body
 			left: -30px
 			+s(refresh)
 			+animation(round 0.5s linear infinite)
+			
+// language switch
+.lang
+	width: 820px
+	margin: 0 auto  
+	height: 86px
+	+clr
+.lang__inner	
+	position: relative
+	float: right
+	width: 85px 
+.lang__list
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	width: 85px
+	height: 20px
+	padding: 4px 0
+	overflow: hidden
+	background: #c6304a
+	+transition(height .2s linear)
+	+border-radius(0 0 2px 2px) 
+	li
+		padding: 3px 0 
+		a
+			display: block
+			font-size: 12px
+			+hp_b
+			padding-left: 15px
+			color: #fff
+			text-transform: uppercase
+			text-decoration: none
+	&.is-open
+		height: 44px
+		&:hover
+			background: #c6304a
+			a
+				&:hover
+					color: #e08393
+	&:hover
+		background: #d16679
+		 						
+
 
 					 	 
 	 

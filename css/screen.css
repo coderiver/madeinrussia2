@@ -148,6 +148,19 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .loading span { position: relative; }
 .loading span .refresh { position: absolute; top: 0; left: -30px; background: url('../img/icons-s94422c8a13.png') 0 -309px no-repeat; width: 17px; height: 19px; -webkit-animation: round 0.5s linear infinite; -moz-animation: round 0.5s linear infinite; -ms-animation: round 0.5s linear infinite; -o-animation: round 0.5s linear infinite; animation: round 0.5s linear infinite; }
 
+.lang { width: 820px; margin: 0 auto; height: 86px; *zoom: 1; }
+.lang:after { content: " "; display: table; clear: both; }
+
+.lang__inner { position: relative; float: right; width: 85px; }
+
+.lang__list { position: absolute; top: 0; left: 0; right: 0; width: 85px; height: 20px; padding: 4px 0; overflow: hidden; background: #c6304a; -webkit-transition: height 0.2s linear; -moz-transition: height 0.2s linear; -o-transition: height 0.2s linear; transition: height 0.2s linear; -webkit-border-radius: 0 0 2px 2px; -moz-border-radius: 0 0 2px 2px; -ms-border-radius: 0 0 2px 2px; -o-border-radius: 0 0 2px 2px; border-radius: 0 0 2px 2px; }
+.lang__list li { padding: 3px 0; }
+.lang__list li a { display: block; font-size: 12px; font-family: "HouschkaProBold", arial, sans-serif; padding-left: 15px; color: white; text-transform: uppercase; text-decoration: none; }
+.lang__list.is-open { height: 44px; }
+.lang__list.is-open:hover { background: #c6304a; }
+.lang__list.is-open:hover a:hover { color: #e08393; }
+.lang__list:hover { background: #d16679; }
+
 .sidebar__top { height: 145px; position: relative; text-align: center; padding-top: 36px; }
 .sidebar__top .sidebar__logo { display: inline-block; }
 .sidebar__top .sidebar__logo a { font: 0/0 a; text-shadow: none; color: transparent; text-decoration: none; display: inline-block; background: url('../img/icons-s94422c8a13.png') 0 -42px no-repeat; width: 103px; height: 73px; }
