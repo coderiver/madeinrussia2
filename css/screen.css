@@ -84,6 +84,8 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 
 .h4 { font-size: 23px; font-family: "HouschkaProDemiBold", arial, sans-serif; }
 
+.h5 { font-size: 18px; color: #492b47; font-family: "HouschkaProBold", arial, sans-serif; text-transform: uppercase; }
+
 .footer { position: absolute; bottom: 0; left: 0; right: 0; *zoom: 1; }
 .footer:after { content: " "; display: table; clear: both; }
 
@@ -296,7 +298,7 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .ohmy__benefits .column33.middle img { position: relative; top: -18px; }
 .ohmy__benefits p { width: 80%; text-align: left; font-size: 13px; margin: 0 auto; }
 
-.ohmy__pict { display: block; margin: 0 -91px 70px; }
+.wide__pict { display: block; margin: 0 -91px 70px; }
 
 .face__topper { *zoom: 1; margin-bottom: 40px; }
 .face__topper:after { content: " "; display: table; clear: both; }
@@ -307,10 +309,12 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 
 .face__name { font-size: 25px; font-family: "HouschkaProBold", arial, sans-serif; line-height: 1; }
 
-.vcard { position: relative; float: right; width: 298px; *zoom: 1; padding: 39px 0 39px 27px; margin-right: -91px; background: whitesmoke; -webkit-border-radius: 4px 0 0 4px; -moz-border-radius: 4px 0 0 4px; -ms-border-radius: 4px 0 0 4px; -o-border-radius: 4px 0 0 4px; border-radius: 4px 0 0 4px; }
+.vcard { position: relative; float: right; width: 227px; *zoom: 1; padding: 39px 91px 39px 27px; margin-right: -91px; background: whitesmoke; -webkit-border-radius: 4px 0 0 4px; -moz-border-radius: 4px 0 0 4px; -ms-border-radius: 4px 0 0 4px; -o-border-radius: 4px 0 0 4px; border-radius: 4px 0 0 4px; }
 .vcard:after { content: " "; display: table; clear: both; }
 .vcard img { float: left; width: 80px; margin-right: 18px; }
 .vcard p { color: #adadac; font-size: 13px; }
+
+.vcard__right { float: right; width: 127px; }
 
 .vcard__title { position: absolute; top: -27px; left: 36px; height: 44px; line-height: 44px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; background: #ff2141; padding: 0 15px; font-size: 23px; font-family: "HouschkaProBold", arial, sans-serif; color: white; }
 .vcard__title:before { content: ""; position: absolute; bottom: -10px; right: 16px; width: 0px; height: 0px; border-style: solid; border-width: 10px 11px 0 11px; border-color: #ff2241 transparent transparent transparent; }
@@ -336,3 +340,7 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .best__calls { background: url(../img/best9.png) 0 0 no-repeat; }
 
 .best__traffic p { width: 60%; padding-left: 20px; font-size: 14px; font-family: "HouschkaProDemiBold", arial, sans-serif; }
+
+.best__award { padding-left: 115px; padding-top: 30px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.best__award .h5 { font-size: 21px; }
+.best__award p { font-size: 14px; text-transform: uppercase; color: #141415; }
