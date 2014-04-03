@@ -99,7 +99,31 @@ $(document).ready(function() {
         }, 500);
     })
 
+    // fixed breadcrumbs
+
+    function breadcrumbs(){
+
+        var bc = $(".breadcrumbs");
+        var bc_top = ($(".js-breadcrumbs").offset().top);
+        console.log(bc_top);
+        if ($(window).scrollTop() >= (bc_top - 50) ) {
+            bc.addClass('is-fixed');
+        }
+        else{
+            bc.removeClass('is-fixed');
+        }
     
+    }
+    if ($(".breadcrumbs").length) {
+        breadcrumbs();
+    };
+    
+
+    $(window).scroll(function(){
+        if ($(".breadcrumbs").length) {
+            breadcrumbs();
+        };
+    });
 
     $(document).click(function(event){
       $(".js-select-list").slideUp('fast');
