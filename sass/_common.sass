@@ -114,7 +114,7 @@ body
 					color: #919192
 	&.is-fixed
 		position: fixed
-		left: 268px
+		left: 220px
 		top: 14px
 		z-index: 1000				
 
@@ -142,6 +142,8 @@ body
 					vertical-align: middle
 				&.vk
 					i
+						position: relative
+						top: -1px
 						display: inline-block
 						+s(vk)
 					&:hover
@@ -156,6 +158,8 @@ body
 							+s(od-hover)	
 				&.fb
 					i
+						position: relative
+						top: -1px
 						display: inline-block
 						+s(fb)
 					&:hover
@@ -163,6 +167,8 @@ body
 							+s(fb-hover)	
 				&.tw
 					i
+						position: relative
+						top: -1px
 						display: inline-block
 						+s(tw)
 					&:hover
@@ -170,6 +176,9 @@ body
 							+s(tw-hover)	
 				&.gp
 					i
+						position: relative
+						top: -1px
+						left: 1px
 						display: inline-block
 						+s(gp)
 					&:hover
@@ -275,12 +284,13 @@ body
 	text-transform: uppercase
 	font-size: 18px
 	color: #522838
-	text-decoration: underline
+	text-decoration: none
+	border-bottom: 1px solid 
 	+hp_b
 	background: inherit 
 	&:hover
 		color: #a8939b
-		text-decoration: none
+		border-bottom: none 
 
 // tabs
 .tabs
@@ -306,14 +316,17 @@ body
 			text-decoration: none
 			color: #352534
 			text-transform: uppercase
-			
+			&:hover
+				color: #c6304a
 		&.is-active
 			a
 				color: #c6304a
 		&.is-inactive
 			a
 				color: #b8b3b8
-				cursor: default		
+				cursor: default
+				&:hover
+					color: #b8b3b8		
 				
 // select
 .select
@@ -422,7 +435,7 @@ body
 	margin: 0 auto 36px
 	padding: 0 61px   
 	height: 50px
-	background: rgba(#fff, .98) 
+	background: rgba(#fff, .88) 
 	+clr
 	z-index: 999
 	.is-narrow &
@@ -472,14 +485,104 @@ body
 	text-align: center
 	font-size: 12px
 	+hp_b
+	+opacity(0)
 	color: #fff
 	text-transform: uppercase
 	+border-radius(0 0 2px 2px)
 	background: #54293a
 	cursor: pointer
+	z-index: -1
 	&:hover
-		background: #715d65      		
-		 						
+		background: #715d65
+	&.is-visible
+		+opacity(1)
+		z-index: 1	
+		
+// popups
+
+.overlay
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0		      		
+	background: rgba(38, 25, 30, .9)
+	z-index: 2001
+.popup
+	position: absolute
+	top: 131px
+	left: 50%
+	width: 747px
+	height: 271px
+	margin-left: -373px
+	+box
+	padding: 50px 45px 
+	+border-radius(2px)  
+	background: #f0f0f0
+	+box-shadow(0px 2px 9px rgba(231, 226, 226, 0.7))
+	z-index: 2002
+	.request
+		width: 657px
+		.request-form
+			margin-top: 0
+		.h4
+			margin-bottom: 17px
+	.input
+		width: 219px
+	.textarea
+		height: 74px
+.popup__close
+	position: absolute
+	top: -30px
+	right: 15px
+	width: 36px
+	height: 30px
+	+border-radius(2px 2px 0 0) 
+	background: #c6304a
+	cursor: pointer
+	&:before
+		content: ""
+		position: absolute
+		top: 7px
+		left: 10px
+		+s(popup-close)
+	&:hover
+		&:before
+			+s(popup-close-hover)
+.popup__done
+	
+	text-align: center
+	font-size: 30px
+	color: #ff2241
+	+hp_db
+	p
+		padding-top: 50px
+		padding-bottom: 50px
+	.btn
+		display: inline-block
+		
+// gallery
+
+.gallery
+	+clr
+	margin: 0 -91px 56px 
+	li
+		float: left
+		width: 12.5%
+		a
+			display: block
+			width: 100%
+			font-size: 0
+			img
+				width: 100%
+				height: 118px 
+			&:hover
+				img
+					+opacity(.9)
+.gallery-content
+	img
+		margin-bottom: 20px 						 			 					
+
 
 
 					 	 

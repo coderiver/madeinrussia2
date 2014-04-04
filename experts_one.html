@@ -84,7 +84,7 @@
 								<div class="expert__name">Сергей Ковеленов</div>
 								<div class="expert__work">Генеральный Директор Oh, my</div>
 								<div class="expert__birthday">День рождения: 25 июня</div>
-								<a href="#" class="feedback"><span>Написать эксперту</span></a>
+								<a href="#" class="feedback js-feedback-btn"><span>Написать эксперту</span></a>
 							</div>
 							<div class="expert__company">
 								<img src="img/logo1.png" alt="">
@@ -101,7 +101,37 @@
 				</div>
 			</div>
 		</div>
-	</div>
+		<div class="popup js-feedback">
+			<div class="popup__close js-feedback-close"></div>
+			<div class="popup_content">
+				<div class="request">
+					<h4 class="h4">Написать эксперту</h4>
+					<form action="">
+						<div class="request-form">
+							<div class="request-form__left">
+								<input type="text" class="input" placeholder="Ваше имя">
+								<input type="text" class="input" placeholder="Ваш email">
+							</div>
+							<div class="request__right">
+								<textarea class="textarea" placeholder="Сообщение"></textarea>
+								</div>
+							<div class="request__btn">
+								<button class="btn js-feedback-submit" type="submit">Отправить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup js-thanks">
+			<div class="popup__close js-thanks-close"></div>
+			<div class="popup_content">
+				<div class="popup__done">
+					<p>Сообщение успешно отправлено</p>
+					<button class="btn js-feedback-again" type="submit">написать еще раз</button>		
+				</div>
+			</div>
+		</div>
 	<!-- end site -->
 	<!-- BEGIN footer -->
 	<footer class="footer">
@@ -122,6 +152,8 @@
 	<!-- END footer -->
 </div>
 <!-- END wrapper-->
+
+<div class="overlay js-overlay"></div>
 
 </body>
 </html>

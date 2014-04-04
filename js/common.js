@@ -93,6 +93,16 @@ $(document).ready(function() {
     
     // body scroll-top  
     
+    function scrollup(){
+       if ($(window).scrollTop() >= 50) {
+            $(".js-scrolltop").addClass('is-visible');
+        }
+        else{
+            $(".js-scrolltop").removeClass('is-visible');
+        } 
+    };
+    scrollup();
+
     $(".js-scrolltop").click(function (){
         $('html, body').animate({
             scrollTop: $(".wrapper").offset().top
@@ -118,11 +128,66 @@ $(document).ready(function() {
         breadcrumbs();
     };
     
+    // feedback popups
+
+    $(".js-overlay").hide();
+    $(".js-feedback").hide();
+    $(".js-thanks").hide();
+    
+    $(".js-feedback-btn").on('click', function(){
+        $(".js-overlay").show();
+        $(".js-feedback").show();
+    });
+    $(".js-feedback-close").on('click', function(){
+        $(this).parent().hide();
+        $(".js-overlay").hide();
+    });
+    $(".js-feedback-submit").on('click', function(){
+        $(this).parents('.js-feedback').hide();
+        $(".js-thanks").show();
+        return false;
+    });
+    $(".js-thanks-close").on('click', function(){
+        $(this).parent().hide();
+        $(".js-overlay").hide();
+    });
+    $(".js-feedback-again").on('click', function(){
+        $(this).parents('.js-thanks').hide();
+        $(".js-feedback").show();
+    });
+    $(".js-overlay").on('click', function(){
+        $(".js-feedback").hide();
+        $(".js-thanks").hide();
+        $(this).hide();
+    });
+
+
+    // fancybox
+
+    if ($(".fancybox").length) {
+        $(".fancybox").fancybox({
+            openEffect  : 'none',
+            closeEffect : 'none',
+            nextEffect : 'fade',
+            prevEffect : 'fade',
+            padding : 23,
+            helpers: {
+              overlay: {
+                locked: false
+              }
+            }
+        });
+    };
+    
+
+
+
 
     $(window).scroll(function(){
         if ($(".breadcrumbs").length) {
             breadcrumbs();
         };
+        scrollup();
     });
 
     $(document).click(function(event){

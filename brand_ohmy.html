@@ -6,8 +6,11 @@
 	<title>brands_ohmy</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery.fancybox.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -19,7 +22,7 @@
 	</div>
 	<ul class="sidebar__nav">
 		<li><a class="sidebar__nav1" href="#"><i></i><span>О катологе</span></a></li>
-		<li><a class="sidebar__nav2" href="#"><i></i><span>Бренды</span></a></li>
+		<li><a class="sidebar__nav2 is-active" href="#"><i></i><span>Бренды</span></a></li>
 		<li><a class="sidebar__nav3" href="#"><i></i><span>Компании</span></a></li>
 		<li><a class="sidebar__nav4" href="#"><i></i><span>Экспортеры</span></a></li>
 		<li><a class="sidebar__nav5" href="#"><i></i><span>Эксперты</span></a></li>
@@ -87,7 +90,7 @@
 					</div>
 					<div class="brand__contacts">
 						<a href="http://www.ohmyltd.ru" class="brand__link">http://www.ohmyltd.ru</a>
-						<a href="#" class="feedback feedback_letter"><span>Написать представителям</span></a>
+						<a href="#" class="feedback feedback_letter js-feedback-btn"><span>Написать представителям</span></a>
 					</div>
 					<section class="brand__article">
 						<div class="grey-box">
@@ -151,7 +154,186 @@
 							<p>2013 год стал для компании прорывным: сократились сроки разработки и производства моделей с полугода до двух месяцев; себестоимость уменьшилась на 20%, а продажи выросли в 9 раз. Весной этого же года Oh, My разработали форму для продавцов мороженого  ЦПКиО  Им. Горького.</p>
 							<p>Сейчас в Oh, My работают больше 10 человек, занимающиеся разработкой линий одежды, маркетингом и продажами. В планах на 2014 год – увеличение производства в России и за ее пределами, увеличение объема продаж до одного миллиона долларов, а также выпуск новых линий одежды в партнерстве с русскими и европейскими дизайнерами.</p>
 						</div>
-						<img class="wide__pict" src="img/ohmy11.png" alt="">
+						<div class="gallery">
+							<ul>
+								<li>
+									<a href="#gallery-content1" rel="gallery1" class="fancybox">
+										<img src="img/pict1.jpg" alt="">
+									</a>
+									<div style="display: none;">
+										<div id="gallery-content1" class="gallery-content">
+											<img src="img/pict-b1.jpg" alt="">
+											<div class="clr">
+												<div class="share">
+													<span>Поделиться</span>
+													<ul>
+														<li><a href="#" class="vk"><i></i></a></li>
+														<li><a href="#" class="od"><i></i></a></li>
+														<li><a href="#" class="fb"><i></i></a></li>
+														<li><a href="#" class="tw"><i></i></a></li>
+														<li><a href="#" class="gp"><i></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="#gallery-content2" rel="gallery1" class="fancybox">
+										<img src="img/pict2.jpg" alt="">
+									</a>
+									<div style="display: none;">
+										<div id="gallery-content2" class="gallery-content">
+											<img src="img/pict-b1.jpg" alt="">
+											<div class="clr">
+												<div class="share">
+													<span>Поделиться</span>
+													<ul>
+														<li><a href="#" class="vk"><i></i></a></li>
+														<li><a href="#" class="od"><i></i></a></li>
+														<li><a href="#" class="fb"><i></i></a></li>
+														<li><a href="#" class="tw"><i></i></a></li>
+														<li><a href="#" class="gp"><i></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="#gallery-content3" rel="gallery1" class="fancybox">
+										<img src="img/pict3.jpg" alt="">
+									</a>
+									<div style="display: none;">
+										<div id="gallery-content3" class="gallery-content">
+											<img src="img/pict-b1.jpg" alt="">
+											<div class="clr">
+												<div class="share">
+													<span>Поделиться</span>
+													<ul>
+														<li><a href="#" class="vk"><i></i></a></li>
+														<li><a href="#" class="od"><i></i></a></li>
+														<li><a href="#" class="fb"><i></i></a></li>
+														<li><a href="#" class="tw"><i></i></a></li>
+														<li><a href="#" class="gp"><i></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="#gallery-content4" rel="gallery1" class="fancybox">
+										<img src="img/pict1.jpg" alt="">
+									</a>
+									<div style="display: none;">
+										<div id="gallery-content4" class="gallery-content">
+											<img src="img/pict-b1.jpg" alt="">
+											<div class="clr">
+												<div class="share">
+													<span>Поделиться</span>
+													<ul>
+														<li><a href="#" class="vk"><i></i></a></li>
+														<li><a href="#" class="od"><i></i></a></li>
+														<li><a href="#" class="fb"><i></i></a></li>
+														<li><a href="#" class="tw"><i></i></a></li>
+														<li><a href="#" class="gp"><i></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="#gallery-content5" rel="gallery1" class="fancybox">
+										<img src="img/pict2.jpg" alt="">
+									</a>
+									<div style="display: none;">
+										<div id="gallery-content5" class="gallery-content">
+											<img src="img/pict-b1.jpg" alt="">
+											<div class="clr">
+												<div class="share">
+													<span>Поделиться</span>
+													<ul>
+														<li><a href="#" class="vk"><i></i></a></li>
+														<li><a href="#" class="od"><i></i></a></li>
+														<li><a href="#" class="fb"><i></i></a></li>
+														<li><a href="#" class="tw"><i></i></a></li>
+														<li><a href="#" class="gp"><i></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="#gallery-content6" rel="gallery1" class="fancybox">
+										<img src="img/pict3.jpg" alt="">
+									</a>
+									<div style="display: none;">
+										<div id="gallery-content6" class="gallery-content">
+											<img src="img/pict-b1.jpg" alt="">
+											<div class="clr">
+												<div class="share">
+													<span>Поделиться</span>
+													<ul>
+														<li><a href="#" class="vk"><i></i></a></li>
+														<li><a href="#" class="od"><i></i></a></li>
+														<li><a href="#" class="fb"><i></i></a></li>
+														<li><a href="#" class="tw"><i></i></a></li>
+														<li><a href="#" class="gp"><i></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="#gallery-content7" rel="gallery1" class="fancybox">
+										<img src="img/pict1.jpg" alt="">
+									</a>
+									<div style="display: none;">
+										<div id="gallery-content7" class="gallery-content">
+											<img src="img/pict-b1.jpg" alt="">
+											<div class="clr">
+												<div class="share">
+													<span>Поделиться</span>
+													<ul>
+														<li><a href="#" class="vk"><i></i></a></li>
+														<li><a href="#" class="od"><i></i></a></li>
+														<li><a href="#" class="fb"><i></i></a></li>
+														<li><a href="#" class="tw"><i></i></a></li>
+														<li><a href="#" class="gp"><i></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="#gallery-content8" rel="gallery1" class="fancybox">
+										<img src="img/pict2.jpg" alt="">
+									</a>
+									<div style="display: none;">
+										<div id="gallery-content8" class="gallery-content">
+											<img src="img/pict-b1.jpg" alt="">
+											<div class="clr">
+												<div class="share">
+													<span>Поделиться</span>
+													<ul>
+														<li><a href="#" class="vk"><i></i></a></li>
+														<li><a href="#" class="od"><i></i></a></li>
+														<li><a href="#" class="fb"><i></i></a></li>
+														<li><a href="#" class="tw"><i></i></a></li>
+														<li><a href="#" class="gp"><i></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
 						<div class="clr face">
 							<div class="column60">
 								<div class="face__topper">
@@ -161,7 +343,7 @@
 									<div class="face__info">
 										<div class="expert__name">Сергей Ковеленов</div>
 										<div class="expert__work">Директор Oh, my</div>
-										<div class="expert__birthday">День рождения: 25 июня</div>
+										<div class="expert__birthday">День рождения: ??</div>
 									</div>
 								</div>
 								<p>На протяжении нескольких лет работал в ряде ведущих издательских домов Санкт-Петербурга, где получил богатый опыт в области PR, маркетинга продаж и менеджмента. Научно-историческая база знаний, полученная в ВУЗе, помогла сформировать жизненные принципы и ориентиры на будущее. </p>
@@ -184,6 +366,37 @@
 			</div>
 		</div>
 	</div>
+	<div class="popup js-feedback">
+			<div class="popup__close js-feedback-close"></div>
+			<div class="popup_content">
+				<div class="request">
+					<h4 class="h4">Написать представителям</h4>
+					<form action="">
+						<div class="request-form">
+							<div class="request-form__left">
+								<input type="text" class="input" placeholder="Ваше имя">
+								<input type="text" class="input" placeholder="Ваш email">
+							</div>
+							<div class="request__right">
+								<textarea class="textarea" placeholder="Сообщение"></textarea>
+								</div>
+							<div class="request__btn">
+								<button class="btn js-feedback-submit" type="submit">Отправить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup js-thanks">
+			<div class="popup__close js-thanks-close"></div>
+			<div class="popup_content">
+				<div class="popup__done">
+					<p>Сообщение успешно отправлено</p>
+					<button class="btn js-feedback-again" type="submit">написать еще раз</button>		
+				</div>
+			</div>
+		</div>
 	<!-- end site -->
 	<!-- BEGIN footer -->
 	<footer class="footer">
@@ -204,6 +417,6 @@
 	<!-- END footer -->
 </div>
 <!-- END wrapper-->
-
+<div class="overlay js-overlay"></div>
 </body>
 </html>
