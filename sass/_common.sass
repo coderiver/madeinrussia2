@@ -443,39 +443,42 @@ body
 .lang__inner	
 	position: relative
 	float: right
-	width: 85px
 	min-height: 28px 
-.lang__list
-	position: absolute
-	top: 0
-	left: 0
-	right: 0
-	width: 85px
+.lang__text
 	height: 20px
-	padding: 4px 0
+	line-height: 20px
+	padding: 4px 11px
 	overflow: hidden
 	background: #c6304a
 	+transition(height .2s linear)
-	+border-radius(0 0 2px 2px) 
+	+border-radius(0 0 2px 2px)
+	font-size: 12px
+	color: #fff
+	+hp_b
+	text-transform: uppercase
+	cursor: pointer
+	&:hover
+		background: #d16679 
+.lang__list
+	position: absolute
+	top: 0px
+	right: 0px
+	padding: 10px 0 
+	+border-radius(0 0 2px 2px)
+	background: #c6304a
 	li
-		padding: 3px 0 
 		a
 			display: block
+			height: 20px
+			line-height: 20px 
+			padding: 0 15px 
 			font-size: 12px
-			+hp_b
-			padding-left: 15px
 			color: #fff
-			text-transform: uppercase
+			+hp_b
 			text-decoration: none
-	&.is-open
-		height: 44px
-		&:hover
-			background: #c6304a
-			a
-				&:hover
-					color: #e08393
-	&:hover
-		background: #d16679
+			text-transform: uppercase
+			&:hover
+				color: #e08393
 .scroll-up
 	float: right
 	width: 53px
