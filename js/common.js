@@ -215,7 +215,12 @@ $(document).ready(function() {
     };
     
 
-
+    if(location.pathname == '/') {
+        var url='/rss/twitter?new=1';
+        var n = 4;
+        if(n) { url=url+'/'+n; }
+        $.get(url, {}, function(data) { $('#tweetbox').html(data); });
+    }
 
 
     $(window).scroll(function(){

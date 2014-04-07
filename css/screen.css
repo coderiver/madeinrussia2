@@ -602,10 +602,10 @@ span.cycle-pager-active { background: #ff2241; }
 
 .socials { padding: 100px 0 80px; }
 
-.socials__plagin { position: relative; padding: 55px 0px; }
+.socials__plagin { position: relative; padding: 55px 0px; min-height: 317px; }
 .socials__plagin ul { *zoom: 1; width: 760px; margin: 0 auto; }
 .socials__plagin ul:after { content: " "; display: table; clear: both; }
-.socials__plagin li { float: left; min-height: 478px; margin-left: 16px; }
+.socials__plagin li { float: left; width: 245px; margin-left: 12px; }
 .socials__plagin li:first-child { margin-left: 0; }
 
 .socials_index { padding: 0 0 80px; }
