@@ -443,14 +443,15 @@ body
 .lang__inner	
 	position: relative
 	float: right
-	min-height: 28px 
+	left: 55px
+	min-height: 28px
+	+transition(all .2s linear) 
 .lang__text
 	height: 20px
 	line-height: 20px
 	padding: 4px 11px
 	overflow: hidden
 	background: #c6304a
-	+transition(height .2s linear)
 	+border-radius(0 0 2px 2px)
 	font-size: 12px
 	color: #fff
@@ -480,6 +481,8 @@ body
 			&:hover
 				color: #e08393
 .scroll-up
+	position: relative
+	top: -28px
 	float: right
 	width: 53px
 	height: 28px
@@ -488,17 +491,17 @@ body
 	text-align: center
 	font-size: 12px
 	+hp_b
-	+opacity(0)
 	color: #fff
 	text-transform: uppercase
 	+border-radius(0 0 2px 2px)
 	background: #54293a
+	+transition(all .2s linear)
 	cursor: pointer
 	z-index: -1
 	&:hover
 		background: #715d65
 	&.is-visible
-		+opacity(1)
+		top: 0
 		z-index: 1	
 		
 // popups

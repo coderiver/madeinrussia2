@@ -48,18 +48,22 @@
 	<div class="lang">
 		<div class="scroll-up js-scrolltop">Вверх</div>
 		<div class="lang__inner">
-			<ul class="lang__list js-lang">
-				<li><a href="#">ENGLISH</a></li>
-				<li><a href="#">Русский</a></li>
-			</ul>
+			<div class="lang__switch js-lang">
+				<div class="lang__text js-lang-text">Рус</div>
+				<input type="hidden" class="js-lang-input">
+				<ul class="lang__list js-lang-list">
+					<li data-id="0"><a href="#">ENGLISH</a></li>
+					<li data-id="1"><a href="#">Русский</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div class="header"></div>
 	<!-- begin site  -->
 	<div class="site">
 		<div class="content">
-			<div class="content__tools">
-				<ul class="breadcrumbs js-breadcrumbs">
+			<div class="content__tools js-breadcrumbs">
+				<ul class="breadcrumbs">
 					<li><a href="#">Бренды</a></li>
 					<li><a href="#">Коммерческие </a></li>
 					<li class="is-current"><a href="#">Одежда</a></li>

@@ -30,20 +30,24 @@ $w480: 480px
 $w360: 360px
 $w320: 320px
 
-$h640: 640px
 $h600: 600px
 $h568: 568px
+$h495: 495px
+$h350: 350px
 
 =r($media)
-	@if $media == h640
-		@media only screen and (max-height: $h640)
-			@content
 	@if $media == h600
 		@media only screen and (max-height: $h600)
 			@content
 	@if $media == h568
 		@media only screen and (max-height: $h568)
-			@content				
+			@content
+	@if $media == h495
+		@media only screen and (max-height: $h495)
+			@content
+	@if $media == h350
+		@media only screen and (max-height: $h350)
+			@content								
 	@if $media == w1280
 		@media only screen and (max-width: $w1280)
 			@content

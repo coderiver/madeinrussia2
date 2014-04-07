@@ -15,10 +15,17 @@
 	position: relative
 	text-align: center
 	padding-top: 36px
-	+r(h600)
-		height: 110px
-	+r(h568)
-		padding-top: 0	  
+	+r(h495)
+		display: none
+	.is-narrow &
+		+r(h600)
+			height: 90px
+			padding-top: 0
+		+r(h495)
+			display: block
+	.is-narrow.is-sidebar &
+		+r(h495)
+		display: none			   
 	.sidebar__logo
 		display: inline-block
 		a
@@ -38,15 +45,16 @@
 .sidebar__nav
 	list-style: none
 	font-size: 14px 
-	margin-left: 60px 
+	margin-left: 60px
+	+r(h495)
+		margin-top: 33px 
 	.is-narrow &
 		margin-left: 14px
-		+r(h568)
-			margin-top: -35px 
+		+r(h495)
+			margin-top: 0  
 	.is-narrow.is-sidebar &
 		margin-left: 60px
-		+r(h568)
-			margin-top: 0 
+		margin-top: 33px
 	li
 		margin-bottom: 17px 
 	a
@@ -118,15 +126,21 @@
 	font-size: 11px 
 	color: #A1A4AD 
 	line-height: 1.1
-	+r(h640)
-		bottom: 10px	 
+	+r(h350)
+		display: none	 
 	.is-narrow &
-		left: 16px 
+		left: 16px
+		+r(h495)
+			display: none 
 	.sidebar__text
 		.is-narrow &
 			display: none
 		.is-narrow.is-sidebar &
 			display: block
+			+r(h600)
+				display: none
+		+r(h600)
+			display: none	
 	.sidebar__age
 		display: inline-block
 		border-radius: 3px 
@@ -138,6 +152,8 @@
 		width: 39px  
 		text-align: center
 		margin-bottom: 8px
+		+r(h568)
+			display: none
 		.is-narrow &
 			display: none
 		.is-narrow.is-sidebar &

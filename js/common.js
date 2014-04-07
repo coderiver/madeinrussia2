@@ -131,9 +131,11 @@ $(document).ready(function() {
     function scrollup(){
        if ($(window).scrollTop() >= 50) {
             $(".js-scrolltop").addClass('is-visible');
+            $(".lang__inner").css('left', 0);
         }
         else{
             $(".js-scrolltop").removeClass('is-visible');
+            $(".lang__inner").css('left', 55);
         } 
     };
     scrollup();
@@ -150,7 +152,6 @@ $(document).ready(function() {
 
         var bc = $(".breadcrumbs");
         var bc_top = ($(".js-breadcrumbs").offset().top);
-        console.log(bc_top);
         if ($(window).scrollTop() >= (bc_top - 50) ) {
             bc.addClass('is-fixed');
         }
@@ -214,6 +215,7 @@ $(document).ready(function() {
         });
     };
     
+    // twitter plugin
 
     if(location.pathname == '/') {
         var url='/rss/twitter?new=1';
@@ -222,6 +224,7 @@ $(document).ready(function() {
         $.get(url, {}, function(data) { $('#tweetbox').html(data); });
     }
 
+    
 
     $(window).scroll(function(){
         if ($(".breadcrumbs").length) {

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -45,10 +46,14 @@
 	<div class="lang">
 		<div class="scroll-up js-scrolltop">Вверх</div>
 		<div class="lang__inner">
-			<ul class="lang__list js-lang">
-				<li><a href="#">ENGLISH</a></li>
-				<li><a href="#">Русский</a></li>
-			</ul>
+			<div class="lang__switch js-lang">
+				<div class="lang__text js-lang-text">Рус</div>
+				<input type="hidden" class="js-lang-input">
+				<ul class="lang__list js-lang-list">
+					<li data-id="0"><a href="#">ENGLISH</a></li>
+					<li data-id="1"><a href="#">Русский</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div class="header"></div>

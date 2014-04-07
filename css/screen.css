@@ -158,18 +158,18 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .lang:after { content: " "; display: table; clear: both; }
 .is-narrow .lang { left: 20px; }
 
-.lang__inner { position: relative; float: right; min-height: 28px; }
+.lang__inner { position: relative; float: right; left: 55px; min-height: 28px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 
-.lang__text { height: 20px; line-height: 20px; padding: 4px 11px; overflow: hidden; background: #c6304a; -webkit-transition: height 0.2s linear; -moz-transition: height 0.2s linear; -o-transition: height 0.2s linear; transition: height 0.2s linear; -webkit-border-radius: 0 0 2px 2px; -moz-border-radius: 0 0 2px 2px; -ms-border-radius: 0 0 2px 2px; -o-border-radius: 0 0 2px 2px; border-radius: 0 0 2px 2px; font-size: 12px; color: white; font-family: "HouschkaProBold", arial, sans-serif; text-transform: uppercase; cursor: pointer; }
+.lang__text { height: 20px; line-height: 20px; padding: 4px 11px; overflow: hidden; background: #c6304a; -webkit-border-radius: 0 0 2px 2px; -moz-border-radius: 0 0 2px 2px; -ms-border-radius: 0 0 2px 2px; -o-border-radius: 0 0 2px 2px; border-radius: 0 0 2px 2px; font-size: 12px; color: white; font-family: "HouschkaProBold", arial, sans-serif; text-transform: uppercase; cursor: pointer; }
 .lang__text:hover { background: #d16679; }
 
 .lang__list { position: absolute; top: 0px; right: 0px; padding: 10px 0; -webkit-border-radius: 0 0 2px 2px; -moz-border-radius: 0 0 2px 2px; -ms-border-radius: 0 0 2px 2px; -o-border-radius: 0 0 2px 2px; border-radius: 0 0 2px 2px; background: #c6304a; }
 .lang__list li a { display: block; height: 20px; line-height: 20px; padding: 0 15px; font-size: 12px; color: white; font-family: "HouschkaProBold", arial, sans-serif; text-decoration: none; text-transform: uppercase; }
 .lang__list li a:hover { color: #e08393; }
 
-.scroll-up { float: right; width: 53px; height: 28px; margin-left: 2px; line-height: 28px; text-align: center; font-size: 12px; font-family: "HouschkaProBold", arial, sans-serif; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; color: white; text-transform: uppercase; -webkit-border-radius: 0 0 2px 2px; -moz-border-radius: 0 0 2px 2px; -ms-border-radius: 0 0 2px 2px; -o-border-radius: 0 0 2px 2px; border-radius: 0 0 2px 2px; background: #54293a; cursor: pointer; z-index: -1; }
+.scroll-up { position: relative; top: -28px; float: right; width: 53px; height: 28px; margin-left: 2px; line-height: 28px; text-align: center; font-size: 12px; font-family: "HouschkaProBold", arial, sans-serif; color: white; text-transform: uppercase; -webkit-border-radius: 0 0 2px 2px; -moz-border-radius: 0 0 2px 2px; -ms-border-radius: 0 0 2px 2px; -o-border-radius: 0 0 2px 2px; border-radius: 0 0 2px 2px; background: #54293a; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; cursor: pointer; z-index: -1; }
 .scroll-up:hover { background: #715d65; }
-.scroll-up.is-visible { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; z-index: 1; }
+.scroll-up.is-visible { top: 0; z-index: 1; }
 
 .overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(38, 25, 30, 0.9); z-index: 2001; }
 
@@ -203,8 +203,10 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .sidebar { z-index: 200; }
 
 .sidebar__top { height: 145px; position: relative; text-align: center; padding-top: 36px; }
-@media only screen and (max-height: 600px) { .sidebar__top { height: 110px; } }
-@media only screen and (max-height: 568px) { .sidebar__top { padding-top: 0; } }
+@media only screen and (max-height: 495px) { .sidebar__top { display: none; } }
+@media only screen and (max-height: 600px) { .is-narrow .sidebar__top { height: 90px; padding-top: 0; } }
+@media only screen and (max-height: 495px) { .is-narrow .sidebar__top { display: block; } }
+.is-narrow.is-sidebar .sidebar__top { display: none; }
 .sidebar__top .sidebar__logo { display: inline-block; }
 .sidebar__top .sidebar__logo a { font: 0/0 a; text-shadow: none; color: transparent; text-decoration: none; display: inline-block; background: url('../img/icons-s5e77bc42a7.png') 0 -42px no-repeat; width: 103px; height: 73px; }
 .is-narrow .sidebar__top .sidebar__logo a { background: url('../img/icons-s5e77bc42a7.png') 0 -452px no-repeat; width: 14px; height: 24px; }
@@ -213,10 +215,10 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .is-narrow.is-sidebar .sidebar__top .sidebar__logo a:hover { background: url('../img/icons-s5e77bc42a7.png') 0 -42px no-repeat; width: 103px; height: 73px; }
 
 .sidebar__nav { list-style: none; font-size: 14px; margin-left: 60px; }
+@media only screen and (max-height: 495px) { .sidebar__nav { margin-top: 33px; } }
 .is-narrow .sidebar__nav { margin-left: 14px; }
-@media only screen and (max-height: 568px) { .is-narrow .sidebar__nav { margin-top: -35px; } }
-.is-narrow.is-sidebar .sidebar__nav { margin-left: 60px; }
-@media only screen and (max-height: 568px) { .is-narrow.is-sidebar .sidebar__nav { margin-top: 0; } }
+@media only screen and (max-height: 495px) { .is-narrow .sidebar__nav { margin-top: 0; } }
+.is-narrow.is-sidebar .sidebar__nav { margin-left: 60px; margin-top: 33px; }
 .sidebar__nav li { margin-bottom: 17px; }
 .sidebar__nav a { color: #ebebeb; text-decoration: none; display: block; position: relative; }
 .is-narrow .sidebar__nav a span { position: absolute; font-size: 14px; color: #2d212c; height: 32px; line-height: 32px; left: 28px; top: -6px; display: none; background: url('../img/icons-s5e77bc42a7.png') 0 -233px no-repeat; width: 254px; height: 32px; width: auto; padding: 0 11px 0 22px; white-space: nowrap; }
@@ -250,11 +252,15 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .is-narrow.is-sidebar .sidebar__nav .sidebar__nav7:hover i { background-position: 0 -338px; }
 
 .sidebar__bottom { position: absolute; bottom: 33px; left: 30px; font-size: 11px; color: #a1a4ad; line-height: 1.1; }
-@media only screen and (max-height: 640px) { .sidebar__bottom { bottom: 10px; } }
+@media only screen and (max-height: 350px) { .sidebar__bottom { display: none; } }
 .is-narrow .sidebar__bottom { left: 16px; }
+@media only screen and (max-height: 495px) { .is-narrow .sidebar__bottom { display: none; } }
 .is-narrow .sidebar__bottom .sidebar__text { display: none; }
 .is-narrow.is-sidebar .sidebar__bottom .sidebar__text { display: block; }
+@media only screen and (max-height: 600px) { .is-narrow.is-sidebar .sidebar__bottom .sidebar__text { display: none; } }
+@media only screen and (max-height: 600px) { .sidebar__bottom .sidebar__text { display: none; } }
 .sidebar__bottom .sidebar__age { display: inline-block; border-radius: 3px; border: 1px solid #655961; font-size: 18px; color: #a1a4ad; height: 26px; line-height: 26px; width: 39px; text-align: center; margin-bottom: 8px; }
+@media only screen and (max-height: 568px) { .sidebar__bottom .sidebar__age { display: none; } }
 .is-narrow .sidebar__bottom .sidebar__age { display: none; }
 .is-narrow.is-sidebar .sidebar__bottom .sidebar__age { display: block; }
 .sidebar__bottom a { color: #fc2747; text-decoration: underline; }
