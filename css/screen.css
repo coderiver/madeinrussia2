@@ -49,7 +49,7 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .breadcrumbs li a:hover { color: #c6c6c6; text-decoration: none; }
 .breadcrumbs li.is-current a { text-decoration: none; cursor: default; }
 .breadcrumbs li.is-current a:hover { color: #919192; }
-.breadcrumbs.is-fixed { position: fixed; left: 220px; top: 14px; z-index: 1000; }
+.breadcrumbs.is-fixed { position: fixed; left: 269px; top: 14px; z-index: 1000; }
 
 .share { float: right; }
 .share > span, .share ul { display: inline-block; vertical-align: middle; font-size: 12px; color: #242424; }
@@ -220,12 +220,12 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 @media only screen and (max-height: 495px) { .is-narrow .sidebar__nav { margin-top: 0; } }
 .is-narrow.is-sidebar .sidebar__nav { margin-left: 60px; margin-top: 33px; }
 .sidebar__nav li { margin-bottom: 17px; }
-.sidebar__nav a { color: #ebebeb; text-decoration: none; display: block; position: relative; }
+.sidebar__nav a { display: inline-block; color: #ebebeb; text-decoration: none; position: relative; line-height: 1; }
 .is-narrow .sidebar__nav a span { position: absolute; font-size: 14px; color: #2d212c; height: 32px; line-height: 32px; left: 28px; top: -6px; display: none; background: url('../img/icons-s5e77bc42a7.png') 0 -233px no-repeat; width: 254px; height: 32px; width: auto; padding: 0 11px 0 22px; white-space: nowrap; }
 .is-narrow.is-sidebar .sidebar__nav a span { position: relative; top: 0; left: 0; padding: 0; line-height: 1.2; height: auto; width: auto; background: none; color: #ebebeb; display: inline; }
 .is-narrow .sidebar__nav a:hover span { display: block; }
 .is-narrow.is-sidebar .sidebar__nav a:hover span { display: inline; color: #c4324c; }
-.sidebar__nav a:hover { color: #c4324c; text-decoration: underline; }
+.sidebar__nav a:hover { color: #c4324c; border-bottom: 1px solid; margin-bottom: -1px; }
 .sidebar__nav a i { display: inline-block; position: absolute; left: -30px; top: -2px; }
 .is-narrow .sidebar__nav a i { position: static; }
 .is-narrow.is-sidebar .sidebar__nav a i { position: absolute; }
