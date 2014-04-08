@@ -32,16 +32,21 @@
 			+hide-text
 			text-decoration: none
 			display: inline-block
-			+s(logo)
+			width: 103px
+			height: 73px 
+			background: url(../img/logo-ru.svg) 0 0 no-repeat
+			-webkit-background-size: 100% 
+			-o-background-size: 100% 
+			background-size: 100% 
 			.is-narrow &
 				+s(back)
 			.is-narrow.is-sidebar &
-				+s(logo)
+				background: url(../img/logo-ru.svg) 0 0 no-repeat
 			&:hover
 				.is-narrow &
 					+sp(backh)
 				.is-narrow.is-sidebar &
-					+s(logo)
+					background: url(../img/logo-ru.svg) 0 0 no-repeat
 .sidebar__nav
 	list-style: none
 	font-size: 14px 
