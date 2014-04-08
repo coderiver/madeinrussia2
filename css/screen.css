@@ -310,7 +310,7 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 
 .request-form__popup { position: absolute; top: 65px; left: 50%; width: 304px; margin-left: -187px; padding: 30px 35px; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; text-align: center; color: white; font-size: 18px; font-family: "HouschkaProBold", arial, sans-serif; background: #ff2241; }
 
-.request-form__close { position: absolute; top: 11px; right: 11px; background: url('../img/icons-s5e77bc42a7.png') 0 -1189px no-repeat; width: 10px; height: 9px; cursor: pointer; }
+.request-form__close { position: absolute; top: 12px; right: 12px; background: url('../img/icons-s5e77bc42a7.png') 0 -1189px no-repeat; width: 10px; height: 9px; cursor: pointer; }
 .request-form__close:hover { background: url('../img/icons-s5e77bc42a7.png') 0 -1318px no-repeat; width: 10px; height: 9px; }
 
 .request-form__left { float: left; }
@@ -449,6 +449,7 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .face__topper:after { content: " "; display: table; clear: both; }
 
 .face__img { float: left; width: 142px; height: 142px; margin-left: -27px; margin-right: 20px; text-align: center; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; overflow: hidden; }
+.face__img img { width: 100%; }
 
 .face__info { float: left; width: 227px; }
 
