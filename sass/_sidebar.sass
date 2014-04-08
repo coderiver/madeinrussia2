@@ -98,7 +98,7 @@
 					color: #C4324C 
 					
 		&:hover
-			color: #C4324C
+			color: #c6304a
 			border-bottom: 1px solid
 			margin-bottom: -1px   
 		i
@@ -110,6 +110,8 @@
 				position: static
 			.is-narrow.is-sidebar &
 				position: absolute
+		&.is-active
+			color: #5c505b		
 	@each $s in 1,2,3,4,5,6,7
 		.sidebar__nav#{$s} 
 			i
@@ -119,6 +121,9 @@
 					+sp(ico#{$s}h)
 				.is-narrow.is-sidebar &
 					+sp(ico#{$s})
+			&.is-active
+				i
+					+sp(ico#{$s}h)		
 
 
 .sidebar__bottom

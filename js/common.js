@@ -207,6 +207,8 @@ $(document).ready(function() {
             nextEffect : 'fade',
             prevEffect : 'fade',
             padding : 23,
+            scrolling: 'no',
+            autoResize: true,
             helpers: {
               overlay: {
                 locked: false

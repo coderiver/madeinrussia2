@@ -195,7 +195,8 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .gallery li a img { width: 100%; height: 118px; }
 .gallery li a:hover img { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90); opacity: 0.9; }
 
-.gallery-content img { margin-bottom: 20px; }
+.gallery-content { max-height: 100%; text-align: center; }
+.gallery-content img { display: inline-block; margin-bottom: 20px; max-width: 100%; max-height: 100%; }
 
 .sidebar__overlay { display: none; }
 .is-narrow.is-sidebar .sidebar__overlay { display: block; position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: 2; }
@@ -225,31 +226,39 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .is-narrow.is-sidebar .sidebar__nav a span { position: relative; top: 0; left: 0; padding: 0; line-height: 1.2; height: auto; width: auto; background: none; color: #ebebeb; display: inline; }
 .is-narrow .sidebar__nav a:hover span { display: block; }
 .is-narrow.is-sidebar .sidebar__nav a:hover span { display: inline; color: #c4324c; }
-.sidebar__nav a:hover { color: #c4324c; border-bottom: 1px solid; margin-bottom: -1px; }
+.sidebar__nav a:hover { color: #c6304a; border-bottom: 1px solid; margin-bottom: -1px; }
 .sidebar__nav a i { display: inline-block; position: absolute; left: -30px; top: -2px; }
 .is-narrow .sidebar__nav a i { position: static; }
 .is-narrow.is-sidebar .sidebar__nav a i { position: absolute; }
+.sidebar__nav a.is-active { color: #5c505b; }
 .sidebar__nav .sidebar__nav1 i { background: url('../img/icons-s5e77bc42a7.png') 0 -398px no-repeat; width: 18px; height: 17px; }
 .is-narrow .sidebar__nav .sidebar__nav1:hover i { background-position: 0 -425px; }
 .is-narrow.is-sidebar .sidebar__nav .sidebar__nav1:hover i { background-position: 0 -398px; }
+.sidebar__nav .sidebar__nav1.is-active i { background-position: 0 -425px; }
 .sidebar__nav .sidebar__nav2 i { background: url('../img/icons-s5e77bc42a7.png') 0 -207px no-repeat; width: 24px; height: 16px; }
 .is-narrow .sidebar__nav .sidebar__nav2:hover i { background-position: 0 -181px; }
 .is-narrow.is-sidebar .sidebar__nav .sidebar__nav2:hover i { background-position: 0 -207px; }
+.sidebar__nav .sidebar__nav2.is-active i { background-position: 0 -181px; }
 .sidebar__nav .sidebar__nav3 i { background: url('../img/icons-s5e77bc42a7.png') 0 -1391px no-repeat; width: 16px; height: 19px; }
 .is-narrow .sidebar__nav .sidebar__nav3:hover i { background-position: 0 -1420px; }
 .is-narrow.is-sidebar .sidebar__nav .sidebar__nav3:hover i { background-position: 0 -1391px; }
+.sidebar__nav .sidebar__nav3.is-active i { background-position: 0 -1420px; }
 .sidebar__nav .sidebar__nav4 i { background: url('../img/icons-s5e77bc42a7.png') 0 -125px no-repeat; width: 24px; height: 18px; }
 .is-narrow .sidebar__nav .sidebar__nav4:hover i { background-position: 0 -153px; }
 .is-narrow.is-sidebar .sidebar__nav .sidebar__nav4:hover i { background-position: 0 -125px; }
+.sidebar__nav .sidebar__nav4.is-active i { background-position: 0 -153px; }
 .sidebar__nav .sidebar__nav5 i { background: url('../img/icons-s5e77bc42a7.png') 0 -797px no-repeat; width: 16px; height: 17px; }
 .is-narrow .sidebar__nav .sidebar__nav5:hover i { background-position: 0 -824px; }
 .is-narrow.is-sidebar .sidebar__nav .sidebar__nav5:hover i { background-position: 0 -797px; }
+.sidebar__nav .sidebar__nav5.is-active i { background-position: 0 -824px; }
 .sidebar__nav .sidebar__nav6 i { background: url('../img/icons-s5e77bc42a7.png') 0 -903px no-repeat; width: 23px; height: 19px; }
 .is-narrow .sidebar__nav .sidebar__nav6:hover i { background-position: 0 -932px; }
 .is-narrow.is-sidebar .sidebar__nav .sidebar__nav6:hover i { background-position: 0 -903px; }
+.sidebar__nav .sidebar__nav6.is-active i { background-position: 0 -932px; }
 .sidebar__nav .sidebar__nav7 i { background: url('../img/icons-s5e77bc42a7.png') 0 -338px no-repeat; width: 17px; height: 20px; }
 .is-narrow .sidebar__nav .sidebar__nav7:hover i { background-position: 0 -368px; }
 .is-narrow.is-sidebar .sidebar__nav .sidebar__nav7:hover i { background-position: 0 -338px; }
+.sidebar__nav .sidebar__nav7.is-active i { background-position: 0 -368px; }
 
 .sidebar__bottom { position: absolute; bottom: 33px; left: 30px; font-size: 11px; color: #a1a4ad; line-height: 1.1; }
 @media only screen and (max-height: 350px) { .sidebar__bottom { display: none; } }
@@ -534,6 +543,7 @@ span.cycle-pager-active { background: #ff2241; }
 .announce__text { font-size: 19px; color: white; line-height: 1; text-transform: uppercase; }
 
 .announce__counter { height: 43px; line-height: 43px; text-align: center; font-family: "HouschkaProBold", arial, sans-serif; text-transform: uppercase; font-size: 22px; color: white; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; background: #ff2241; }
+.announce__counter .btn { border-bottom: none; }
 
 .announce_index .announce__inner:before { display: none; }
 .announce_index .announce__content { width: 520px; }
