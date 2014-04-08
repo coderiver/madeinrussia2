@@ -181,7 +181,7 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .popup .textarea { height: 74px; }
 
 .popup__close { position: absolute; top: -30px; right: 15px; width: 36px; height: 30px; -webkit-border-radius: 2px 2px 0 0; -moz-border-radius: 2px 2px 0 0; -ms-border-radius: 2px 2px 0 0; -o-border-radius: 2px 2px 0 0; border-radius: 2px 2px 0 0; background: #c6304a; cursor: pointer; }
-.popup__close:before { content: ""; position: absolute; top: 7px; left: 10px; background: url('../img/icons-s5e77bc42a7.png') 0 -1208px no-repeat; width: 14px; height: 14px; }
+.popup__close:before { content: ""; position: absolute; top: 7px; left: 11px; background: url('../img/icons-s5e77bc42a7.png') 0 -1208px no-repeat; width: 14px; height: 14px; }
 .popup__close:hover:before { background: url('../img/icons-s5e77bc42a7.png') 0 -1165px no-repeat; width: 14px; height: 14px; }
 
 .popup__done { text-align: center; font-size: 30px; color: #ff2241; font-family: "HouschkaProDemiBold", arial, sans-serif; }
