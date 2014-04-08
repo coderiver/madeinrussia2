@@ -704,8 +704,19 @@ span.cycle-pager-active
 	color: #fff
 	+border-radius(4px)
 	background: #ff2241
-	.btn
-		border-bottom: none 
+	button
+		position: relative 
+		top: -2px
+		font-size: 16px
+		+hp_b
+		border-bottom: 1px solid
+		line-height: 1.2 
+		text-transform: uppercase
+		color: #fff
+		background: transparent
+		&:hover
+			color: #980f22
+			border-bottom: none  
 .announce_index
 	.announce__inner
 		&:before
