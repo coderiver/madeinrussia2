@@ -199,6 +199,10 @@ body { background: #f0f0f0; font-size: 14px; font-family: "Houschka Pro Medium",
 .gallery-content { max-height: 100%; text-align: center; }
 .gallery-content img { display: inline-block; margin-bottom: 20px; max-width: 100%; max-height: 100%; }
 
+.ohmy__workers-img { float: right; width: 40%; margin-right: 20px; }
+
+.ohmy__workers { float: right; width: 40%; font-size: 13px; }
+
 .sidebar__overlay { display: none; }
 .is-narrow.is-sidebar .sidebar__overlay { display: block; position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: 2; }
 
